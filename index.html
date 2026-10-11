@@ -4,36 +4,143 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#0a100e">
-  <meta name="description" content="Zombie Road Trip for Android — the original gameplay and menus, now with modern device compatibility and gamepad support. Unofficial fan compatibility project.">
+  <meta name="description" content="Zombie Road Trip for Android. Original gameplay and menus with added controller support and modern Android compatibility. Unofficial fan project.">
   <meta property="og:title" content="Zombie Road Trip">
-  <meta property="og:description" content="The original road trip, made playable on modern Android with invisible controller support. An unofficial fan compatibility project by TrippySatori.">
+  <meta property="og:description" content="Zombie Road Trip, with the original gameplay preserved and controller support added for modern Android. Unofficial fan project by TrippySatori.">
   <meta property="og:type" content="website">
   <meta name="color-scheme" content="dark">
-  <title>Zombie Road Trip | TrippySatori</title>
+  <meta name="robots" content="index,follow">
+  <meta name="author" content="TrippySatori">
+  <meta property="og:site_name" content="Zombie Road Trip">
+  <meta property="og:url" content="https://mirealbadman.github.io/zrt-classic-download/">
+  <meta property="og:image:alt" content="Zombie Road Trip post-apocalyptic highway artwork">
+  <meta name="twitter:card" content="summary">
+  <title>Zombie Road Trip — Android with Controller Support</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/style.css">
+  <style>/* All presentation styles bundled here so your GitHub update only needs index.html. */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&display=swap');
+:root{--base:#0a100e;--panel:#111a16;--panel2:#18231d;--border:#344137;--text:#f2f5e8;--sub:#aebbaa;--lime:#c7ff62;--orange:#ff8b52;--head:'Barlow Condensed',Impact,'Arial Narrow',sans-serif;--body:'DM Sans',system-ui,-apple-system,sans-serif;--mono:'DM Mono',ui-monospace,SFMono-Regular,Menlo,monospace;scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}html{background:var(--base);scroll-padding-top:70px}body{margin:0;overflow-x:hidden;color:var(--text);font:400 16px/1.6 var(--body);-webkit-font-smoothing:antialiased}button,a{font:inherit}a{color:inherit;text-decoration:none}button{cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid var(--lime);outline-offset:4px}::selection{background:var(--lime);color:var(--base)}.visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.skip-link{position:absolute;top:-70px;left:20px;padding:10px 18px;background:var(--lime);color:var(--base);z-index:60}.skip-link:focus{top:15px}.shell{width:min(1320px,calc(100% - 96px));margin-inline:auto}
+.notice-bar{height:33px;display:flex;gap:12px;align-items:center;justify-content:center;letter-spacing:.125em;font:500 10px var(--mono);color:#08100b;background:var(--lime);padding:0 15px}.notice-bar .live-dot{background:#152714;box-shadow:0 0 0 3px rgba(0,0,0,.10)}.notice-right{position:absolute;right:48px}.notice-sep{opacity:.45}.live-dot{width:7px;height:7px;background:var(--lime);border-radius:50%;display:inline-block;box-shadow:0 0 0 4px rgba(199,255,98,.10)}
+.site-header{height:94px;border-bottom:1px solid var(--border);background:rgba(10,16,14,.96);position:relative;z-index:10}.header-inner{display:flex;height:100%;align-items:center;justify-content:space-between;gap:30px}.wordmark{display:flex;align-items:center;gap:15px;line-height:1}.wordmark-mark{font:900 43px/.82 var(--head);letter-spacing:-.045em}.mark-stop,.footer-brand span{color:var(--lime)}.wordmark-small{border-left:1px solid #52634c;padding-left:14px;font:500 10px/1.4 var(--mono);letter-spacing:.13em;color:#b7c5ab}.nav{display:flex;gap:42px}.nav a,.nav-download{font:500 11px var(--mono);letter-spacing:.12em}.nav a:hover,.text-link:hover{color:var(--lime)}.nav-download{border:1px solid var(--lime);padding:15px 23px;white-space:nowrap;transition:background .2s,color .2s}.nav-download:hover{background:var(--lime);color:var(--base)}.nav-download span{margin-left:17px;font-size:16px}
+.hero{position:relative;display:grid;grid-template-columns:54% 46%;min-height:730px;align-items:stretch;border-left:1px solid var(--border);border-right:1px solid var(--border)}.hero-copy{padding:85px 65px 76px 57px;position:relative;z-index:1;background:radial-gradient(circle at 0% 16%,rgba(97,126,45,.11),transparent 45%)}.eyebrow,.section-index{font:500 11px/1.6 var(--mono);letter-spacing:.14em;color:var(--lime)}.eyebrow .slash{font-size:14px;padding-right:12px}.hero h1{font:900 clamp(72px,9vw,143px)/.79 var(--head);letter-spacing:-.025em;margin:40px 0 38px;text-transform:uppercase}.hero h1 em{font-style:normal;color:var(--lime);white-space:nowrap}.hero-subtitle{font:700 clamp(24px,2.6vw,35px)/1.1 var(--head);text-transform:uppercase;letter-spacing:.01em;margin:0 0 23px}.hero-subtitle strong{color:var(--orange)}.hero-description{font-size:14px;line-height:1.9;max-width:475px;color:var(--sub);margin:0}.hero-description strong{color:var(--text)}.hero-cta{display:flex;align-items:center;gap:27px;margin-top:41px}.primary-button{background:var(--lime);color:#0a100e;min-height:81px;padding:14px 19px;display:inline-flex;align-items:center;gap:16px;min-width:286px;box-shadow:7px 7px 0 rgba(199,255,98,.11);transition:transform .2s ease,box-shadow .2s ease,background .2s;cursor:pointer}.primary-button:hover{background:#dbff99;transform:translate(-2px,-2px);box-shadow:10px 10px 0 rgba(199,255,98,.16)}.primary-button .button-icon{font:bold 30px var(--head);border-right:1px solid rgba(0,0,0,.24);padding:0 16px 0 0}.primary-button strong{display:block;font:800 23px/1 var(--head);letter-spacing:.025em;white-space:nowrap}.primary-button small{display:block;font:500 9px var(--mono);letter-spacing:.04em;margin-top:5px}.button-end{font:600 22px var(--head);margin-left:auto;align-self:flex-start}.text-link{white-space:nowrap;font:500 10px var(--mono);letter-spacing:.07em}.text-link span{font-size:15px;margin-left:6px}.hero-note{display:flex;gap:9px;align-items:center;margin:27px 0 0;font:400 10px/1.5 var(--mono);color:#9dab97}.hero-note svg{width:18px;height:18px;fill:var(--lime);flex:none}.hero-note a{color:var(--text);text-decoration:underline;text-decoration-color:#60765c;text-underline-offset:4px}
+.hero-art{position:relative;min-height:640px;border-left:1px solid var(--border);background:#19281f;isolation:isolate;overflow:hidden}.hero-art::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.05),transparent 67%,rgba(0,0,0,.27))}.hero-art img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}.art-top,.art-bottom{position:absolute;z-index:2;left:31px;right:31px;display:flex;align-items:center;justify-content:space-between;font:500 10px var(--mono);letter-spacing:.08em}.art-top{top:28px;color:#e5f1d5}.art-bottom{bottom:30px;color:#e4efdb}.art-sticker{position:absolute;z-index:2;right:-25px;top:42%;width:192px;height:90px;transform:rotate(-8deg);background:var(--orange);color:#142116;display:flex;flex-direction:column;justify-content:center;align-items:center;font:900 36px/.80 var(--head);letter-spacing:.01em;box-shadow:10px 12px 0 rgba(10,16,14,.45)}.art-sticker span{font-size:20px}.hero-bottom{grid-column:1/-1;border-top:1px solid var(--border);height:76px;display:flex;align-items:center;gap:45px;padding:0 56px;font:500 10px var(--mono);letter-spacing:.04em;color:#a3b39b}.hero-bottom b{color:var(--lime);margin-right:5px}.hero-bottom-cross{margin-left:auto;font-size:24px;color:var(--lime)}
+.ticker{height:53px;display:flex;align-items:center;overflow:hidden;background:var(--lime);color:var(--base);white-space:nowrap}.ticker-track{font:900 27px var(--head);letter-spacing:.08em;word-spacing:.1em;animation:slide 26s linear infinite}@keyframes slide{to{transform:translateX(-25%)}}.section-pad{padding-top:123px;padding-bottom:123px}.section-head{display:grid;grid-template-columns:1fr;gap:19px;margin-bottom:45px}.section-head h2,.verify-layout h2,.bottom-cta h2{font:900 clamp(52px,6.2vw,90px)/.88 var(--head);letter-spacing:-.015em;margin:6px 0 1px}.section-head h2 em,.verify-layout h2 em,.bottom-cta h2 em{font-style:normal;color:var(--lime)}.section-head p,.verify-layout>div>p{max-width:510px;color:var(--sub);font-size:14px;line-height:1.9;margin:0}.feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.feature{position:relative;background:var(--panel);min-height:310px;border:1px solid var(--border);padding:27px 30px;transition:border-color .2s}.feature:hover{border-color:var(--lime)}.feature-number,.feature-glyph{font:500 12px var(--mono);color:var(--lime)}.feature-glyph{position:absolute;top:18px;right:25px;font:700 50px var(--head);color:#78925d}.feature h3{font:800 30px/1 var(--head);letter-spacing:.015em;margin:92px 0 16px}.feature p{font-size:13px;line-height:1.8;color:var(--sub);max-width:320px;margin:0}.build-status{background:#19241c;border:1px solid #536540;margin-top:16px;display:flex;align-items:center;gap:26px;padding:21px 28px}.status-tag{white-space:nowrap;display:flex;gap:11px;align-items:center;color:var(--lime);font:500 11px var(--mono)}.build-status p{font-size:12px;color:var(--sub);margin:0;line-height:1.8}.build-status strong{color:var(--text)}
+.controls-section{background:#141e18;position:relative;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}.controls-section::before{content:'';position:absolute;top:0;left:0;right:0;height:100%;pointer-events:none;background:radial-gradient(circle at 75% 8%,rgba(133,169,72,.10),transparent 45%)}.section-head-row{display:grid;grid-template-columns:1fr 280px;align-items:end;gap:40px}.control-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:#3d4b3c;border:1px solid #3d4b3c}.control{display:flex;align-items:center;gap:27px;padding:32px;background:#111a15;min-height:156px}.control-symbol{flex:0 0 112px;height:88px;display:grid;place-items:center;border:1px solid #5b7149;color:var(--lime);font:900 41px var(--head);border-radius:10px;background:#19281c;transform:rotate(-2deg)}.control-symbol small{font-size:22px;margin-left:3px}.control-label{color:var(--lime);font:500 10px var(--mono);letter-spacing:.10em}.control h3{font:800 24px/1.1 var(--head);margin:11px 0 5px}.control p{font-size:12px;color:var(--sub);margin:0}.control-advice{font-size:12px;line-height:1.8;color:var(--sub);padding:18px 22px;margin:13px 0 0;border-left:3px solid var(--orange);background:#20281f}.control-advice strong{color:var(--text)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{padding:24px 29px 25px;border:1px solid var(--border);background:#101813;min-height:254px}.step-no{font:900 57px var(--head);color:var(--lime);border-bottom:1px solid var(--border);line-height:1.2;padding-bottom:12px;display:flex;justify-content:space-between}.step-no span{font-size:27px}.step h3{font:800 27px/1.1 var(--head);margin:25px 0 12px}.step p{font-size:13px;line-height:1.8;color:var(--sub);margin:0}.warning{display:flex;align-items:flex-start;gap:15px;border:1px solid #7c593c;background:#271e16;padding:17px 21px;margin-top:17px}.warning>span{font:800 22px var(--head);width:28px;height:28px;border:2px solid var(--orange);color:var(--orange);display:grid;place-items:center;border-radius:50%;flex:none}.warning p{margin:0;font-size:12px;line-height:1.8;color:#e7cdbc}.warning p strong{color:#ffe2bd}
+.verify-section{border-block:1px solid var(--border);background:#101a14;padding:110px 0}.verify-layout{display:grid;grid-template-columns:43% 57%;gap:35px;align-items:center}.verify-layout h2{margin:18px 0 25px}.verify-card{padding:29px;background:#18251b;border:1px solid #536346;min-width:0}.verify-metadata{display:grid;grid-template-columns:1fr 1fr;gap:26px 20px;border-bottom:1px solid #42513e;padding-bottom:26px;margin-bottom:23px}.verify-metadata span{display:block;font:500 10px var(--mono);letter-spacing:.09em;color:#a9bba4}.verify-metadata strong{font:700 14px var(--body);display:block;margin-top:7px;overflow-wrap:anywhere}.verify-card label{font:500 11px var(--mono);color:var(--lime);letter-spacing:.08em}.checksum-row{display:flex;align-items:center;gap:5px;background:#0d140f;border:1px solid #5c6a51;margin:10px 0 13px;padding:11px}.checksum-row code{font:500 12px/1.8 var(--mono);overflow-wrap:anywhere;min-width:0;flex:1;color:#e2f6c3}.checksum-row button{flex:0 0 42px;height:42px;display:grid;place-items:center;border:1px solid var(--border);background:#263728;color:var(--lime);border-radius:0}.checksum-row button:hover{background:#3a5031}.checksum-row svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7}.copy-feedback{font:400 10px/1.8 var(--mono);color:#a4b79d;margin:0}.copy-feedback code{font:inherit;color:#d5e6c6}.bottom-cta{display:flex;justify-content:space-between;align-items:center;gap:35px;padding-block:125px}.bottom-cta h2{margin:18px 0 16px}.bottom-cta p{font-size:13px;color:var(--sub);margin:0}.footer{background:#0e160f;border-top:1px solid var(--border)}.footer-row{display:flex;justify-content:space-between;gap:70px;padding-top:62px;padding-bottom:60px}.footer-brand{font:900 78px/.85 var(--head);letter-spacing:-.04em}.footer-row p{color:#a7b5a2;font-size:12px;line-height:1.9}.footer-row strong{color:var(--text)}.footer-meta{max-width:465px}.footer-meta p:first-child{font:500 10px var(--mono);letter-spacing:.09em;color:var(--lime)}.copyright{border-top:1px solid #344136;display:flex;justify-content:space-between;gap:20px;padding-block:24px;font:500 10px var(--mono);color:#879783;letter-spacing:.045em}a[aria-disabled="true"]{opacity:.5;cursor:not-allowed;pointer-events:none}
+@media (min-width:1550px){.hero h1{font-size:137px}}@media (max-width:1250px){.shell{width:min(1320px,calc(100% - 64px))}.hero{grid-template-columns:55% 45%}.hero-copy{padding:76px 34px 68px 40px}.hero h1{font-size:clamp(65px,8.2vw,110px)}.hero-cta{flex-wrap:wrap}.nav{gap:24px}.section-pad{padding-block:95px}.hero-bottom{padding-inline:30px;gap:24px}.control{gap:18px}.control-symbol{flex-basis:90px}}
+@media(max-width:900px){.shell{width:min(1320px,calc(100% - 40px))}.nav{display:none}.site-header{height:80px}.hero{grid-template-columns:1fr}.hero-copy{padding:66px 40px}.hero h1{font-size:clamp(84px,12vw,125px);margin-block:34px}.hero-art{height:510px;min-height:0;border-left:0;border-top:1px solid var(--border)}.hero-art img{object-position:center 53%}.hero-bottom{height:auto;padding:21px 30px;flex-wrap:wrap;gap:18px}.feature-grid{grid-template-columns:1fr 1fr}.feature:last-child{grid-column:span 2;min-height:235px}.feature:last-child h3{margin-top:38px}.section-head-row{grid-template-columns:1fr}.controls-section .section-head p{max-width:620px}.verify-layout{grid-template-columns:1fr;gap:40px}.verify-card{max-width:700px}.bottom-cta{padding-block:100px}}
+@media(max-width:650px){.shell{width:calc(100% - 28px)}.notice-bar{height:30px;gap:7px;font-size:8px;letter-spacing:.065em}.notice-right{display:none}.wordmark-mark{font-size:39px}.wordmark-small{font-size:9px}.site-header{height:72px}.nav-download{font-size:9px;padding:11px 12px}.nav-download span{margin-left:7px}.hero-copy{padding:48px 23px 53px}.hero h1{font-size:clamp(66px,15.6vw,103px);margin:28px 0 27px}.hero-subtitle{font-size:29px;margin-bottom:18px}.hero-description{font-size:13px}.hero-cta{gap:19px;margin-top:29px;align-items:flex-start;flex-direction:column}.primary-button{width:100%;justify-content:flex-start;max-width:420px}.text-link{margin-left:2px}.hero-note{align-items:flex-start;font-size:9px}.hero-art{height:490px}.art-top,.art-bottom{left:17px;right:17px;font-size:8px}.art-sticker{width:142px;height:68px;right:-13px;font-size:26px}.art-sticker span{font-size:15px}.hero-bottom{padding:16px 20px;display:grid;grid-template-columns:1fr 1fr;gap:11px 16px;font-size:9px}.hero-bottom-cross{display:none}.ticker{height:45px}.ticker-track{font-size:22px}.section-pad{padding-top:76px;padding-bottom:77px}.section-index{font-size:10px}.section-head{gap:15px;margin-bottom:28px}.section-head h2,.verify-layout h2,.bottom-cta h2{font-size:clamp(51px,13vw,72px)}.feature-grid,.steps,.control-grid{grid-template-columns:1fr}.feature{min-height:245px;padding:22px 23px}.feature h3{margin-top:70px}.feature:last-child{grid-column:span 1;min-height:245px}.feature:last-child h3{margin-top:70px}.build-status{padding:19px;align-items:flex-start;gap:15px;flex-direction:column}.control{padding:21px;min-height:119px;gap:18px}.control-symbol{flex-basis:79px;height:67px;font-size:29px}.control-symbol small{font-size:17px}.control h3{font-size:21px}.controls-section .section-head p{font-size:13px}.step{min-height:0}.step-no{font-size:44px}.step h3{margin-top:19px}.verify-section{padding:80px 0}.verify-card{padding:19px}.verify-metadata{gap:19px}.verify-metadata strong{font-size:12px}.checksum-row code{font-size:10px}.bottom-cta{display:block;padding-block:86px}.bottom-cta .primary-button{margin-top:30px}.footer-row{display:block;padding-block:56px}.footer-meta{margin-top:39px}.copyright{display:block;padding-block:22px;font-size:9px}.copyright span{display:block;margin-bottom:5px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+/* Keep titles and buttons within the viewport even if web fonts are unavailable. */
+.hero h1{font-size:clamp(68px,7.5vw,109px)}
+@media(max-width:900px){.hero h1{font-size:clamp(64px,9.8vw,92px)}}
+@media(max-width:650px){.hero h1{font-size:clamp(36px,12vw,60px)}.primary-button{min-width:0;padding:13px 12px;gap:9px}.primary-button strong{font-size:21px}.primary-button .button-icon{padding-right:11px}.primary-button .button-end{margin-left:auto;font-size:17px}}
+@media(max-width:900px){.bottom-cta{flex-wrap:wrap}}
+@media(max-width:400px){.hero-copy{padding-inline:17px}.hero h1{font-size:11vw}.primary-button strong{font-size:18px}.primary-button .button-end{display:none}.hero-note{flex-wrap:wrap}}
+@media(max-width:400px){.verify-layout h2{font-size:clamp(39px,11.4vw,48px)}.verify-layout>div{min-width:0}}
+@media(min-width:901px){.verify-layout{grid-template-columns:minmax(0,43fr) minmax(0,57fr)}}
+
+/* V2 visual / usability finishing pass */
+:root{--focus:#e3ff8e}
+html{scroll-padding-top:110px}
+body{overflow-x:clip}
+:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
+button,a{ -webkit-tap-highlight-color:rgba(188,255,108,.16)}
+button{font:inherit}
+.site-header{position:sticky;top:0;z-index:40;background:rgba(13,21,15,.96);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--border)}
+.header-actions{display:flex;gap:12px;align-items:center;margin-left:auto}
+.header-inner .nav{margin-left:auto}
+.hero-copy{background-image:radial-gradient(circle at 25% 8%,rgba(177,242,91,.045),transparent 42%)}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:-4px;margin-bottom:16px}
+.hero-tags span{border:1px solid #46583d;color:#b7cc9e;padding:7px 9px;font:600 9px/1 var(--mono);letter-spacing:.065em}
+.primary-button{position:relative;isolation:isolate;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
+.primary-button:hover{transform:translateY(-2px);box-shadow:0 11px 34px rgba(172,228,87,.16)}
+.primary-button:active{transform:translateY(1px)}
+.hero-art img{transition:transform .8s cubic-bezier(.22,1,.36,1)}
+.hero-art:hover img{transform:scale(1.035)}
+.feature,.step{transition:transform .2s ease,border-color .2s ease}
+.feature:hover,.step:hover{transform:translateY(-3px);border-color:#779c5b}
+.section-index{letter-spacing:.12em}
+.menu-toggle{display:none;border:1px solid #536a4b;background:#172318;min-width:42px;height:42px;padding:11px;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:6px}
+.menu-toggle>span:not(.visually-hidden){display:block;width:18px;height:2px;background:var(--lime);transition:transform .2s ease}
+.menu-toggle[aria-expanded="true"]>span:first-child{transform:translateY(4px) rotate(45deg)}
+.menu-toggle[aria-expanded="true"]>span:nth-child(2){transform:translateY(-4px) rotate(-45deg)}
+.faq-section{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:linear-gradient(145deg,#182419,#0f1912)}
+.faq-layout{display:grid;grid-template-columns:minmax(0,40fr) minmax(0,60fr);gap:65px;align-items:start}
+.faq-intro h2{margin:20px 0}.faq-intro>p{max-width:360px;font-size:14px;line-height:1.8;color:var(--sub)}
+.faq-release{display:inline-block;margin-top:14px;color:var(--lime);font:600 12px var(--mono);letter-spacing:.05em;text-decoration:none;border-bottom:1px solid #618347;padding-bottom:11px}
+.faq-release span{margin-left:10px}
+.faq-items{border-top:1px solid #4d6045}
+.faq-items details{border-bottom:1px solid #4d6045;scroll-margin-top:105px}
+.faq-items summary{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:24px 4px;cursor:pointer;list-style:none;color:var(--text);font:800 clamp(18px,2vw,24px)/1.15 var(--head)}
+.faq-items summary::-webkit-details-marker{display:none}
+.faq-items summary>span{font:400 29px/1 var(--mono);color:var(--lime);transition:transform .2s;flex:none}
+.faq-items details[open] summary>span{transform:rotate(45deg)}
+.faq-items details p{font-size:13px;line-height:1.9;color:var(--sub);margin:0 30px 22px 4px;max-width:620px}
+.faq-items details p a{color:var(--lime);text-underline-offset:4px}
+.faq-items details p strong{color:var(--text)}
+#download-status{font:500 11px/1.8 var(--mono);color:#b6d28f}
+[data-apk-link][aria-disabled="true"]{opacity:.65;cursor:not-allowed;pointer-events:auto}
+.hero-note svg{flex-shrink:0}
+@media(max-width:900px){.site-header .header-inner{position:relative}.menu-toggle{display:flex}.header-inner .nav{display:none;position:absolute;left:0;right:0;top:100%;margin-left:0;z-index:30;background:#152118;border:1px solid #516547;box-shadow:0 15px 25px rgba(0,0,0,.45);padding:12px}.header-inner .nav[data-open="true"]{display:grid;gap:0}.header-inner .nav a{padding:13px 11px;border-bottom:1px solid #2f3f31;font-size:12px;min-height:42px}.header-inner .nav a:last-child{border-bottom:none}.faq-layout{grid-template-columns:1fr;gap:34px}}
+@media(max-width:650px){html{scroll-padding-top:85px}.header-actions{gap:8px}.menu-toggle{min-width:39px;height:39px}.hero-tags span{font-size:8px}.hero-tags{margin-bottom:10px}.faq-items summary{padding:20px 0}.faq-section{padding-block:76px}.faq-layout{gap:28px}.hero-art:hover img{transform:none}.feature:hover,.step:hover{transform:none}}
+@media(max-width:365px){.nav-download{padding-inline:8px;font-size:8px}.wordmark-small{display:none}.hero-tags span{padding:6px}}
+@media(prefers-reduced-motion:reduce){.hero-art img,.feature,.step,.primary-button,.menu-toggle>span{transition:none!important}.hero-art:hover img,.feature:hover,.step:hover,.primary-button:hover{transform:none!important}}
+
+
+/* Final collision-avoidance and brand consistency pass. */
+.art-sticker{right:14px}
+.hero h1,.section-head h2,.bottom-cta h2{overflow-wrap:normal}
+.hero-copy,.hero-cta,.hero-cta>a,.verify-card,.faq-layout>*{min-width:0}
+.primary-button{max-width:100%}
+.primary-button strong{white-space:normal;overflow-wrap:normal}
+.notice-right{white-space:nowrap}
+@media(min-width:901px) and (max-width:1120px){
+  .header-inner{gap:16px}.header-inner .nav{gap:17px}
+  .wordmark-small{padding-left:10px}.nav-download{padding-inline:13px}
+}
+@media(max-width:650px){
+  .hero-cta{align-items:flex-start}
+  .hero-cta>.primary-button{width:100%;justify-content:flex-start}
+  .primary-button strong{font-size:clamp(18px,5.4vw,23px)}
+  .hero-bottom{gap:12px 20px}
+}
+@media(max-width:375px){
+  .notice-bar{font-size:9px;letter-spacing:.06em}
+  .hero-copy{padding-inline:21px}
+  .primary-button{min-width:0;padding-inline:13px;gap:10px}
+  .primary-button .button-icon{padding-right:10px}
+  .primary-button .button-end{font-size:18px}
+  .verify-card{min-width:0}
+  .checksum-row code{overflow-wrap:anywhere;word-break:break-all}
+}
+</style>
   <script defer src="assets/download-config.js"></script>
-  <script defer src="assets/app.js"></script>
+
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="notice-bar" role="note"><span class="live-dot" aria-hidden="true"></span> ZOMBIE ROAD TRIP <span class="notice-sep">/</span> ANDROID EDITION <span class="notice-right">V24 · 09 OCT 2026</span></div>
+  <div class="notice-bar" role="note"><span class="live-dot" aria-hidden="true"></span> ZOMBIE ROAD TRIP <span class="notice-sep">/</span> BACK ON THE ROAD <span class="notice-right">CONTROLLER SUPPORT FOR ANDROID</span></div>
   <header class="site-header">
     <div class="shell header-inner">
-      <a class="wordmark" href="#top" aria-label="Zombie Road Trip, return to top"><span class="wordmark-mark">ZRT<span class="mark-stop">.</span></span><span class="wordmark-small">ANDROID<br>EDITION</span></a>
-      <nav class="nav" aria-label="Main navigation"><a href="#about">THE BUILD</a><a href="#controls">CONTROLS</a><a href="#install">INSTALL</a></nav>
-      <a class="nav-download" href="./assets/Zombie-Road-Trip-Classic-Test8.apk" download="Zombie-Road-Trip-Classic-Test8.apk" data-apk-link>GET THE APK <span aria-hidden="true">↘</span></a>
+      <a class="wordmark" href="#top" aria-label="Zombie Road Trip, return to top"><span class="wordmark-mark">ZRT<span class="mark-stop">.</span></span><span class="wordmark-small">GAMEPAD<br>READY</span></a>
+      <nav class="nav" id="site-navigation" aria-label="Main navigation"><a href="#about">THE GAME</a><a href="#controls">CONTROLS</a><a href="#install">INSTALL</a><a href="#faq">FAQ</a></nav>
+      <div class="header-actions">
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation menu"><span></span><span></span><span class="visually-hidden">Menu</span></button>
+        <a class="nav-download" href="#download-help" data-apk-link>GET THE APK <span aria-hidden="true">↘</span></a>
+      </div>
     </div>
   </header>
   <main id="main">
     <section id="top" class="hero shell" aria-labelledby="page-title">
       <div class="hero-copy">
-        <div class="eyebrow"><span class="slash">//</span> MADE TO KEEP THE ORIGINAL ALIVE</div>
+        <div class="eyebrow"><span class="slash">//</span> THE ORIGINAL GAME. MORE WAYS TO PLAY.</div>
         <h1 id="page-title">ZOMBIE<span class="visually-hidden"> </span><br><em>ROAD TRIP.</em></h1>
-        <p class="hero-subtitle">The same game. The same chaos.<br><strong>A new road ahead.</strong></p>
-        <p class="hero-description">The original Zombie Road Trip experience, with modern Android compatibility and controller support behind the scenes. No extra menus. No gameplay makeover. Just <strong>RIDE.</strong></p>
+        <p class="hero-subtitle">The original game. Same chaos.<br><strong>Now with controller support.</strong></p><div class="hero-tags" aria-label="Download details"><span>ANDROID APK</span><span>61.7 MiB</span><span>GAMEPAD SUPPORT</span></div>
+        <p class="hero-description">Play Zombie Road Trip on modern Android with added controller support. The original gameplay, touch controls, menus and progression are preserved. Just <strong>RIDE.</strong></p>
         <div class="hero-cta">
-          <a class="primary-button" href="./assets/Zombie-Road-Trip-Classic-Test8.apk" download="Zombie-Road-Trip-Classic-Test8.apk" data-apk-link><span class="button-icon" aria-hidden="true">↓</span><span><strong>DOWNLOAD FOR ANDROID</strong><small>ANDROID APK · 61.7 MiB</small></span><span class="button-end" aria-hidden="true">↗</span></a>
+          <a class="primary-button" href="#download-help" data-apk-link><span class="button-icon" aria-hidden="true">↓</span><span><strong>DOWNLOAD FOR ANDROID</strong><small>ANDROID APK · 61.7 MiB</small></span><span class="button-end" aria-hidden="true">↗</span></a>
           <a class="text-link" href="#install">HOW TO INSTALL <span aria-hidden="true">↗</span></a>
         </div>
         <p class="hero-note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 3 6v6c0 5 3.4 8.5 9 10 5.6-1.5 9-5 9-10V6l-9-4Zm0 4 5 2.1V12c0 3.2-1.8 5.4-5 6.5C8.8 17.4 7 15.2 7 12V8.1L12 6Z"/></svg> Check the SHA-256 before installing. <a href="#verify">VERIFY FILE</a></p>
@@ -42,19 +149,19 @@
         <div class="art-top"><span>THE END IS ONLY THE BEGINNING</span><span>ZRT / 01</span></div>
         <img src="assets/cover.svg" alt="" width="880" height="930" fetchpriority="high">
         <div class="art-sticker" aria-hidden="true"><span>STAY</span><b>UNDEAD</b></div>
-        <div class="art-bottom"><span>NO REMASTER. NO REWRITE.</span><span>JUST THE ORIGINAL.</span></div>
+        <div class="art-bottom"><span>NO NEW MENUS. NO MODS.</span><span>ORIGINAL GAMEPLAY.</span></div>
       </div>
-      <div class="hero-bottom"><span><b>01</b> / CLASSIC PRESERVATION</span><span><b>02</b> / MODERN COMPATIBILITY</span><span><b>03</b> / CONTROLLER SUPPORT</span><span class="hero-bottom-cross" aria-hidden="true">✳</span></div>
+      <div class="hero-bottom"><span><b>01</b> / ORIGINAL GAMEPLAY</span><span><b>02</b> / MODERN ANDROID</span><span><b>03</b> / CONTROLLER SUPPORT</span><span class="hero-bottom-cross" aria-hidden="true">✳</span></div>
     </section>
     <div class="ticker" aria-hidden="true"><div class="ticker-track">SURVIVE · DRIVE · REPEAT · ORIGINAL GAMEPLAY · CONTROLLER READY · SURVIVE · DRIVE · REPEAT · ORIGINAL GAMEPLAY · CONTROLLER READY · &nbsp;</div></div>
     <section id="about" class="about shell section-pad" aria-labelledby="about-heading">
-      <div class="section-head"><div class="section-index">01 / ABOUT THE BUILD</div><h2 id="about-heading">IF IT AIN'T BROKE,<br><em>DON'T CHANGE IT.</em></h2><p>This isn't a reimagining. It's the original road trip with just enough engineering to keep going.</p></div>
+      <div class="section-head"><div class="section-index">01 / THE GAME</div><h2 id="about-heading">IF IT AIN'T BROKE,<br><em>DON'T CHANGE IT.</em></h2><p>It's Zombie Road Trip, exactly as you remember it — with controller support and Android compatibility work added.</p></div>
       <div class="feature-grid">
-        <article class="feature"><span class="feature-number">01</span><span class="feature-glyph" aria-hidden="true">↶</span><h3>THE ORIGINAL FEEL</h3><p>Original game, graphics, menus, sounds, progression, and timing carried over. No custom UI or gameplay mods.</p></article>
-        <article class="feature"><span class="feature-number">02</span><span class="feature-glyph" aria-hidden="true">⚙</span><h3>MODERN ANDROID</h3><p>A compatibility layer bridges the legacy game to newer Android hardware. Target device: Galaxy S25 Ultra.</p></article>
-        <article class="feature"><span class="feature-number">03</span><span class="feature-glyph" aria-hidden="true">✛</span><h3>CONTROLLER SUPPORT</h3><p>Drive, rotate and shoot with supported gamepads. Controller inputs are blocked from accidentally pressing the pre-ride menus.</p></article>
+        <article class="feature"><span class="feature-number">01</span><span class="feature-glyph" aria-hidden="true">↶</span><h3>ORIGINAL GAMEPLAY</h3><p>The original graphics, menus, sounds, progression and gameplay remain. No extra in-game UI, modes or gameplay mods.</p></article>
+        <article class="feature"><span class="feature-number">02</span><span class="feature-glyph" aria-hidden="true">⚙</span><h3>MODERN ANDROID</h3><p>Compatibility work allows the classic game to run on newer Android hardware. Developed for the Galaxy S25 Ultra; other devices may vary.</p></article>
+        <article class="feature"><span class="feature-number">03</span><span class="feature-glyph" aria-hidden="true">✛</span><h3>CONTROLLER SUPPORT</h3><p>Rotate and shoot using supported gamepads while riding. The original touchscreen menus stay touch-only, helping prevent accidental selections.</p></article>
       </div>
-      <div class="build-status"><span class="status-tag"><span class="live-dot"></span> COMPATIBILITY BUILD</span><p><strong>Compatibility status:</strong> source and APK verification passed. Some devices and controllers have not yet been verified with this release. Not guaranteed on every phone.</p></div>
+      <div class="build-status"><span class="status-tag"><span class="live-dot"></span> CONTROLLER READY</span><p><strong>Compatibility note:</strong> APK integrity and source checks passed. Actual performance depends on the phone and controller; not every device combination is confirmed.</p></div>
     </section>
     <section id="controls" class="controls-section section-pad" aria-labelledby="controls-heading"><div class="shell">
       <div class="section-head section-head-row"><div><div class="section-index">02 / BUTTON MAPPING</div><h2 id="controls-heading">TAKE THE <em>WHEEL.</em></h2></div><p>Gamepad support kicks in during active gameplay. Original menu navigation stays on the touchscreen.</p></div>
@@ -68,12 +175,99 @@
     </div></section>
     <section id="install" class="install shell section-pad" aria-labelledby="install-heading">
       <div class="section-head"><div class="section-index">03 / SETUP</div><h2 id="install-heading">THREE STEPS.<br><em>ONE MORE RIDE.</em></h2><p>Android APK installation. This app is not distributed through Google Play.</p></div>
-      <div class="steps"><article class="step"><div class="step-no">01 <span aria-hidden="true">↘</span></div><h3>DOWNLOAD THE APK</h3><p>Use the download button and find the APK in your phone's Downloads folder.</p></article><article class="step"><div class="step-no">02 <span aria-hidden="true">↘</span></div><h3>ALLOW INSTALLATION</h3><p>Open the file. Android may ask you to allow installation from your browser or Files app for this one install.</p></article><article class="step"><div class="step-no">03 <span aria-hidden="true">↘</span></div><h3>UPDATE, THEN RIDE</h3><p>Install over the existing compatible test build to retain progression. Don't uninstall first. Pair a controller or use touch.</p></article></div>
+      <div class="steps"><article class="step"><div class="step-no">01 <span aria-hidden="true">↘</span></div><h3>DOWNLOAD THE APK</h3><p>Use the download button and find the APK in your phone's Downloads folder.</p></article><article class="step"><div class="step-no">02 <span aria-hidden="true">↘</span></div><h3>ALLOW INSTALLATION</h3><p>Open the file. Android may ask you to allow installation from your browser or Files app for this one install.</p></article><article class="step"><div class="step-no">03 <span aria-hidden="true">↘</span></div><h3>UPDATE, THEN RIDE</h3><p>If you already have a compatible version installed, update it without uninstalling to help preserve saves. Pair a controller or use touch.</p></article></div>
       <div class="warning"><span aria-hidden="true">!</span><p><strong>Protect your save:</strong> If Android says the app can't be updated, don't uninstall the previous build. A different signing certificate may prevent updating. Save data could be lost if you remove the installed app.</p></div>
     </section>
-    <section id="verify" class="verify-section" aria-labelledby="verify-heading"><div class="shell verify-layout"><div><div class="section-index">04 / FILE INTEGRITY</div><h2 id="verify-heading">KNOW YOUR<br><em>DOWNLOAD.</em></h2><p>Compare this fingerprint against the APK you download. A matching SHA-256 confirms it is byte-identical to this release.</p></div><div class="verify-card"><div class="verify-metadata"><div><span>BUILD</span><strong>1.0-zrt-classic-test8-polish</strong></div><div><span>VERSION CODE</span><strong>24</strong></div><div><span>FILE SIZE</span><strong>64,666,083 bytes</strong></div><div><span>TYPE</span><strong>Android APK</strong></div></div><label for="checksum">SHA-256 CHECKSUM</label><div class="checksum-row"><code id="checksum">a343f3b46a82075de11eb7b1c3fec08e2556b98a3bf7d0b289d1f629294dda8b</code><button type="button" id="copy-hash" aria-label="Copy SHA-256 checksum" title="Copy checksum"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg></button></div><p id="copy-feedback" class="copy-feedback" role="status" aria-live="polite">Tip: On a computer, use <code>sha256sum filename.apk</code> to compare.</p></div></div></section>
-    <section class="bottom-cta shell" aria-labelledby="bottom-heading"><div><div class="section-index">READY?</div><h2 id="bottom-heading">THE ROAD <em>CALLS.</em></h2><p>The original road trip. Ready for Android.</p></div><a class="primary-button" href="./assets/Zombie-Road-Trip-Classic-Test8.apk" download="Zombie-Road-Trip-Classic-Test8.apk" data-apk-link><span class="button-icon" aria-hidden="true">↓</span><span><strong>DOWNLOAD FOR ANDROID</strong><small>APK · 61.7 MiB</small></span><span class="button-end" aria-hidden="true">↗</span></a></section>
+    <section id="verify" class="verify-section" aria-labelledby="verify-heading"><div class="shell verify-layout"><div><div class="section-index">04 / FILE INTEGRITY</div><h2 id="verify-heading">KNOW YOUR<br><em>DOWNLOAD.</em></h2><p>Compare this fingerprint against the APK you download. A matching SHA-256 confirms it is byte-identical to this release.</p></div><div class="verify-card"><div class="verify-metadata"><div><span>GAME</span><strong>Zombie Road Trip</strong></div><div><span>VERSION CODE</span><strong>24</strong></div><div><span>FILE SIZE</span><strong>64,666,083 bytes</strong></div><div><span>TYPE</span><strong>Android APK</strong></div></div><label for="checksum">SHA-256 CHECKSUM</label><div class="checksum-row"><code id="checksum">a343f3b46a82075de11eb7b1c3fec08e2556b98a3bf7d0b289d1f629294dda8b</code><button type="button" id="copy-hash" aria-label="Copy SHA-256 checksum" title="Copy checksum"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg></button></div><p id="copy-feedback" class="copy-feedback" role="status" aria-live="polite">Tip: On a computer, use <code>sha256sum filename.apk</code> to compare.</p></div></div></section>
+    <section id="faq" class="faq-section section-pad" aria-labelledby="faq-heading">
+      <div class="shell faq-layout">
+        <div class="faq-intro"><div class="section-index">05 / HELP & SUPPORT</div><h2 id="faq-heading">STAY ON<br><em>THE ROAD.</em></h2><p>Quick answers before you install. No account, installer app, or subscription needed.</p><a class="faq-release" href="https://github.com/mirealbadman/zrt-classic-download/releases" target="_blank" rel="noopener noreferrer">VIEW ALL RELEASES <span aria-hidden="true">↗</span></a></div>
+        <div class="faq-items">
+          <details><summary>WILL MY SAVE DATA CARRY OVER?<span aria-hidden="true">+</span></summary><p>Usually, updating an app with the same package name and signing certificate preserves local data. Don't uninstall your existing build first. If Android rejects the update, stop before removing anything.</p></details>
+          <details><summary>CAN I PLAY WITHOUT A CONTROLLER?<span aria-hidden="true">+</span></summary><p>Yes. The original touchscreen controls remain available. Supported gamepads provide an additional way to play during gameplay.</p></details>
+          <details><summary>WHY DOES ANDROID ASK FOR PERMISSION?<span aria-hidden="true">+</span></summary><p>This is an APK downloaded outside the Play Store. Android may ask you to allow installation from your browser or Files app. Only install files you trust, and turn off that permission again afterward if you prefer.</p></details>
+          <details><summary>IS THIS AN OFFICIAL RELEASE?<span aria-hidden="true">+</span></summary><p>No. This is an independent, unofficial compatibility effort. Zombie Road Trip and its original content belong to their respective rights holders.</p></details>
+          <details id="download-help"><summary>DOWNLOAD NOT WORKING?<span aria-hidden="true">+</span></summary><p>Open the <a href="https://github.com/mirealbadman/zrt-classic-download/releases" target="_blank" rel="noopener noreferrer">GitHub Releases page</a>, choose the newest release, then tap the APK under <strong>Assets</strong>. You can also check the file size and SHA-256 shown above.</p><p id="download-status" aria-live="polite">The download button points to the configured release file when available.</p></details>
+        </div>
+      </div>
+    </section>
+    <section class="bottom-cta shell" aria-labelledby="bottom-heading"><div><div class="section-index">READY?</div><h2 id="bottom-heading">THE ROAD <em>CALLS.</em></h2><p>The original road trip, with modern Android compatibility.</p></div><a class="primary-button" href="#download-help" data-apk-link><span class="button-icon" aria-hidden="true">↓</span><span><strong>DOWNLOAD FOR ANDROID</strong><small>APK · 61.7 MiB</small></span><span class="button-end" aria-hidden="true">↗</span></a></section>
   </main>
-  <footer class="footer"><div class="shell footer-row"><div><div class="footer-brand">ZRT<span>.</span></div><p>Classic Android compatibility and controller work<br>prepared for <strong>TrippySatori</strong>.</p></div><div class="footer-meta"><p><strong>UNOFFICIAL FAN COMPATIBILITY PROJECT</strong></p><p>Zombie Road Trip and its original assets, characters and branding belong to their respective rights holders. Not affiliated with or endorsed by the original creators or publishers. Redistribution requires appropriate rights or permission. Original in-game credits remain intact.</p></div></div><div class="shell copyright"><span>© ORIGINAL OWNERS FOR ZOMBIE ROAD TRIP IP</span><span>BUILT TO KEEP THE ROAD ALIVE</span></div></footer>
+  <footer class="footer"><div class="shell footer-row"><div><div class="footer-brand">ZRT<span>.</span></div><p>Android compatibility and controller support<br>by <strong>TrippySatori</strong>.</p></div><div class="footer-meta"><p><strong>UNOFFICIAL FAN COMPATIBILITY PROJECT</strong></p><p>Zombie Road Trip and its original assets, characters and branding belong to their respective rights holders. Not affiliated with or endorsed by the original creators or publishers. Redistribution requires appropriate rights or permission. Original in-game credits remain intact.</p></div></div><div class="shell copyright"><span>ORIGINAL GAME © ITS RESPECTIVE RIGHTS HOLDERS</span><span>CONTROLLER SUPPORT · TRIPPYSATORI</span></div></footer>
+<script>
+
+(() => {
+  'use strict';
+  document.addEventListener('DOMContentLoaded', () => {
+    const links = [...document.querySelectorAll('[data-apk-link]')];
+    const status = document.getElementById('download-status');
+    const raw = typeof window.ZRT_APK_URL === 'string' ? window.ZRT_APK_URL.trim() : '';
+    let url = '';
+    try {
+      const parsed = new URL(raw);
+      if (parsed.protocol === 'https:' && parsed.hostname && !raw.includes('SET_RELEASE_URL_HERE')) url = parsed.href;
+    } catch (_) { /* A missing or unfinished URL is handled gracefully. */ }
+    for (const link of links) {
+      if (url) {
+        link.href = url;
+        link.removeAttribute('aria-disabled');
+        link.removeAttribute('download'); // Let GitHub serve its own release asset filename.
+      } else {
+        link.href = '#download-help';
+        link.setAttribute('aria-disabled', 'true');
+        link.removeAttribute('download');
+        link.setAttribute('title', 'Release link not set. See download help.');
+        link.addEventListener('click', () => {
+          const help = document.getElementById('download-help');
+          if (help) help.open = true;
+        });
+      }
+    }
+    if (status) {
+      status.textContent = url ? 'Download link configured. If it fails, open GitHub Releases above and choose the APK under Assets.' : 'The download URL is not set. Use the Releases page above or update assets/download-config.js.';
+    }
+
+    const menu = document.getElementById('menu-toggle');
+    const nav = document.getElementById('site-navigation');
+    const setMenu = open => {
+      if (!menu || !nav) return;
+      menu.setAttribute('aria-expanded', String(open));
+      menu.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+      nav.dataset.open = String(open);
+    };
+    menu?.addEventListener('click', () => setMenu(menu.getAttribute('aria-expanded') !== 'true'));
+    nav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
+    document.addEventListener('pointerdown', e => {
+      if (menu && nav && !menu.contains(e.target) && !nav.contains(e.target)) setMenu(false);
+    });
+
+    const copy = document.getElementById('copy-hash');
+    const hash = document.getElementById('checksum');
+    const feedback = document.getElementById('copy-feedback');
+    copy?.addEventListener('click', async () => {
+      if (!hash || !feedback) return;
+      const value = hash.textContent.trim();
+      try {
+        if (navigator.clipboard && window.isSecureContext) await navigator.clipboard.writeText(value);
+        else {
+          const temp = document.createElement('textarea');
+          temp.value = value;
+          temp.style.cssText = 'position:fixed;left:-9999px';
+          document.body.appendChild(temp);
+          temp.select();
+          const copied = document.execCommand('copy');
+          temp.remove();
+          if (!copied) throw new Error('Copy failed');
+        }
+        feedback.textContent = '✓ Checksum copied to clipboard.';
+      } catch (_) {
+        feedback.textContent = 'Unable to copy automatically. Press and hold the checksum above to copy it.';
+      }
+    });
+  });
+})();
+
+</script>
 </body>
 </html>
